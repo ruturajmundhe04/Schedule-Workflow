@@ -1,0 +1,16 @@
+name: schedule Job
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  run-script:
+    runs-on: macos-latest
+
+    steps:
+      - name: Print Message 
+      tun: echo "Schedule Workflow execute"
+      
+
+  
